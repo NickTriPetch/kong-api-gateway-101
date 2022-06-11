@@ -1,0 +1,17 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: webA
+  url: http://web:8080
+  routes:
+  - name: web-a-route
+    paths:
+    - /weba
+
+- name: webB
+  url: http://web:8081
+  routes:
+  - name: web-b-route
+    paths:
+    - /webb
